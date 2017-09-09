@@ -48,6 +48,9 @@ html {
   color: white;
 }
 
+.nav-collapse {
+  display: none;
+}
 /* Marquee Box */
 
 #marquee-container {
@@ -78,7 +81,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin: 30rem auto;
+  margin: 30rem auto 0rem auto;
   width: 100%;
   position:absolute;
 }
@@ -93,7 +96,7 @@ html {
   align-items: center;
 }
 .pic-wide {
-  max-width: 90%;
+  width: 5rem;
 }
 .pic-narrow {
   width: 3.5rem;
@@ -156,4 +159,63 @@ html {
 .copyright-container img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 900px){
+  #top {
+    height: 22rem;
+  }.site-container {
+      width: 100%;
+      margin: 0rem auto;
+  }
+  .header-bar{
+    margin-top: 0rem;
+  }
+  #marquee-container {
+    width: 100%;
+  }
+
+  .marquee {
+    background-color: white;
+    margin: 5rem 2rem 0rem 0rem;
+    padding: 0.75rem 4rem;
+  }
+  .marquee span {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 615px){
+  #top {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .site-container {
+      width: 100%;
+      margin: 0rem auto;
+  }
+  .header-bar{
+    margin-top: 0rem;
+  }
+  #marquee-container {
+    width: 100%;
+  }
+
+  .marquee {
+    background-color: white;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1rem 0rem;
+  }
+  .marquee span {
+    font-size: 1rem;
+  }
+  .nav-collapse {
+    display: block;
+    padding-right: 2rem;
+    color: white;
+  }
+  .nav-entry {
+    display: none;
+  }
 }
