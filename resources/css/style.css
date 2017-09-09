@@ -174,14 +174,25 @@ html {
   #marquee-container {
     width: 100%;
   }
-
+  #services-container {
+    margin: 22rem auto 3.77rem auto;
+  }
+  #copy-container {
+    margin: 37rem auto 0rem auto;
+  }
+  #bottom {
+    margin: 53rem auto 0rem auto;
+  }
   .marquee {
     background-color: white;
     margin: 5rem 2rem 0rem 0rem;
     padding: 0.75rem 4rem;
+    display: flex;
+    justify-content: center;
   }
   .marquee span {
     font-size: 1.33rem;
+    text-align: center;
   }
 }
 
@@ -199,12 +210,13 @@ html {
   }
   #marquee-container {
     width: 100%;
+    padding: 0rem;
   }
 
   .marquee {
     background-color: white;
     width: 100%;
-    margin-top: 5rem;
+    margin: 9rem 0rem 0rem 0rem;
     padding: 1rem 0rem;
   }
   .marquee span {
@@ -216,6 +228,87 @@ html {
     color: white;
   }
   .nav-entry {
+    display: none;
+  }
+  #services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20.77rem auto 3.77rem auto;
+    width: 100%;
+    position:absolute;
+  }
+
+  .service {
+    display: flex;
+    width: 5rem;
+    height: 8rem;
+    margin: 0rem 0rem 1.54rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pic-wide {
+    width: 5rem;
+  }
+  .pic-narrow {
+    width: 3.5rem;
+    height: auto;
+  }
+  .service span {
+    text-align: center;
+    font-size: 0.77rem;
+    padding-top: 1.54rem;
+  }
+
+  #copy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50rem auto 0rem auto;
+    width: 100%;
+    height: 20rem;
+    position:absolute;
+  }
+
+  .blurb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0rem 0rem 4rem 0rem;
+  }
+  .blurb-title {
+    width: 100%;
+    padding: 0.77rem 0rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .blurb {
+    font-size: .77rem;
+    padding-left: 0.25rem;
+  }
+  #bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 70rem auto 0rem auto;
+    width: 100%;
+    position:absolute;
+  }
+
+  .copyright-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright-container img {
+    height: 1.5rem;
+    padding-right: 1rem;
+  }
+  .copyright-text {
     display: none;
   }
 }
